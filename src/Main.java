@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         determineLeapYear(2019);
         determineOSVersion(0, 2021);
-        determineDeliveryDays(99);
+        determineDeliveryDays(140);
     }
 
     // Задача 1
@@ -37,11 +37,8 @@ public class Main {
         if (deliveryDistance > 20) {
             deliveryDays = deliveryDays + 1;
         }
-        if (deliveryDistance > 60) {
-            deliveryDays = deliveryDays + 1;
-        }
-        if (deliveryDistance > 100) {
-            deliveryDays = deliveryDays + 1;
+        if (deliveryDistance >= 60) {
+            deliveryDays = (deliveryDistance + 60) / 40;
         }
         System.out.println("Потребуется " + deliveryDays + " дней доставки.");
     }
