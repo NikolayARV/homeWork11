@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         determineLeapYear(2019);
         determineOSVersion(0, 2021);
-        determineDeliveryDays(140);
+        determineDeliveryDays(12056);
     }
 
     // Задача 1
